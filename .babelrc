@@ -1,0 +1,13 @@
+{
+    "presets": [ //preset is a collection of code transform plugins
+        ["env", { //means targeting the environment. we can specify which environment to target by giving it an object:
+            "targets": {
+                "browsers": [
+                    "last 5 versions", //Babel will automatically figure out which ES6 features need to be converted so it works on the last 5 versions of browsers
+                    "ie >= 8"
+                    //more info can be found on the documentation of Babel
+                ]
+            }
+        }]
+    ]
+}
